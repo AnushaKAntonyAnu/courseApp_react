@@ -3,7 +3,7 @@ import NavBar from './NavBar'
 import axios from 'axios'
 
 const AddCourse = () => {
-    const[data,SetData]=useState(
+    const[data,setData]=useState(
         
             {
                 "title": "",
@@ -16,7 +16,7 @@ const AddCourse = () => {
         
     )
     const inputHandler=(event)=>{
-        SetData({...data,[event.target.name]:event.target.value})
+        setData({...data,[event.target.name]:event.target.value})
     }
     const readValue=()=>{
         console.log(data)
